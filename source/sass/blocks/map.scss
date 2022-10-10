@@ -1,0 +1,30 @@
+.map__wrapper {
+  max-width: $desktop;
+  margin: 0 auto;
+}
+
+.map__container {
+  width: 100%;
+  height: 420px;
+  @media (min-width: $tablet) {
+    height: 480px;
+  }
+  @media (min-width: $desktop) {
+    height: 540px;
+  }
+}
+
+.map__photo {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map.no-script .map__photo {
+  display: block;
+}
+
+.map.no-script .map__canvas {
+  display: none
+}

@@ -1,0 +1,8 @@
+.navigation {
+  display: flex;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    align-self: center;
+  }
+}

@@ -1,0 +1,80 @@
+.range__scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 34px;
+  background: $light-grey;
+}
+
+.range__bar {
+  position: absolute;
+  width: 260px;
+  height: 4px;
+  background: $primary-lighter;
+
+
+  @media (min-width: $tablet) {
+    width: 203px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 298px;
+  }
+}
+
+.range__bar--disabled {
+  background-color: $base-grey;
+}
+
+.range__drag {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.range__drag::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.range__drag:disabled {
+  border-color: $base-grey;
+}
+
+.range__drag--min,
+.range__drag--max {
+  background-color: $base-white;
+  border: 2px solid $primary-lighter;
+}
+
+.range__drag--min {
+  bottom: -10px;
+  left: 0;
+}
+
+.range__drag--max {
+  bottom: -10px;
+  right: 0;
+}
+
+.range__drag:hover::before,
+.range__drag:focus::before {
+  background-color: $primary-opacity;
+}
+
+.range__drag:active::before {
+  background-color: $primary-lighter;
+}
+
+

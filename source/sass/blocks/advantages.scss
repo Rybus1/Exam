@@ -1,0 +1,157 @@
+.advantages__wrapper {
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 248px 26px 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 40px 119px;
+  }
+}
+
+.advantages__badge {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.advantages__caption {
+  margin-bottom: 36px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 61px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+}
+
+.advantages__list {
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-left: 76px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 76px 0 0 0;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 56px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 50%;
+  }
+}
+
+.advantages__item--speed {
+  padding-top: 66px;
+  padding-bottom: 32px;
+}
+
+.advantages__item--speed::before {
+  background-image: url("../img/speed.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--convenience {
+  padding-top: 66px;
+  padding-bottom: 32px;
+}
+
+.advantages__item--convenience::before {
+  background-image: url("../img/convenience.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--energy {
+  padding-top: 66px;
+  padding-bottom: 32px;
+}
+
+.advantages__item--energy::before {
+  background-image: url("../img/energy.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--ecology {
+  padding-top: 66px;
+  padding-bottom: 60px;
+}
+
+.advantages__item--ecology::before {
+  background-image: url("../img/ecology.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__name {
+  margin-bottom: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
+}
+
+.advantages__description {
+  @media (min-width: $tablet) {
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,90 @@
+.account {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 120px;
+
+  @media (min-width: $desktop) {
+    min-width: 261px;
+    column-gap: 27px;
+  }
+}
+
+.account__link {
+  display: flex;
+  padding: 22px;
+
+  @media (min-width: $tablet) {
+    padding: 32px 18px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $base-black;
+  }
+}
+
+.account__link:focus {
+  outline: none;
+  border: none;
+
+  @media (min-width: $desktop) {
+    color: $base-primary;
+  }
+}
+
+.account__link:hover {
+  @media (min-width: $desktop) {
+    color: $base-primary;
+  }
+}
+
+.account__link:hover .account__icon-user,
+.account__link:focus .account__icon-user,
+.account__link:hover .account__icon-basket,
+.account__link:focus .account__icon-basket {
+  @media (min-width: $desktop) {
+    fill: $base-primary;
+  }
+}
+
+.account__link:active {
+  outline: none;
+  border: none;
+  background-color: $base-secondary;
+}
+
+.account__sign-in {
+  display: none;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.account__basket {
+  display: none;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.account__icon-user {
+  fill: $base-black;
+
+  @media (min-width: $tablet) {
+    margin-right: 8px;
+  }
+}
+
+.account__icon-basket {
+  fill: $base-black;
+
+  @media (min-width: $tablet) {
+    margin-right: 8px;
+  }
+}

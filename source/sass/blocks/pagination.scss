@@ -1,0 +1,79 @@
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+  }
+}
+
+.pagination__link {
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: $base-white;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $base-primary;
+  border-radius: 4px;
+}
+
+.pagination__link--active {
+  font-weight: 600;
+  background-color: transparent;
+  color: $base-black;
+}
+
+.pagination__link--disabled {
+  background-color: $light-grey;
+  color: $base-white;
+}
+
+.pagination__link:hover,
+.pagination__link:focus {
+  border: none;
+  outline: none;
+  background-color: $primary-lighter;
+  color: $base-white;
+}
+
+.pagination__link:active {
+  background-color: $primary-darker;
+}
+
+.pagination__icon {
+  display: none;
+  fill: $base-primary;
+
+  @media (max-width: $mobile-only) {
+    display: block;
+  }
+}
+
+.pagination__icon--next {
+  transform: rotate(180deg);
+}
+
+.pagination__link:hover .pagination__icon,
+.pagination__link:focus .pagination__icon,
+.pagination__link:active .pagination__icon {
+  fill: $base-white;
+}
+
+.pagination__link--disabled .pagination__icon {
+  fill: $base-white;
+}
+
+.pagination__text {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}

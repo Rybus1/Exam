@@ -1,0 +1,77 @@
+.toggle {
+  display: block;
+  position: relative;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.toggle:focus {
+  border: none;
+  outline: none;
+  background-color: $base-secondary;
+}
+
+.toggle:active {
+  border: none;
+  outline: none;
+  background-color: $base-secondary;
+}
+
+.toggle__bar {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle__bar::before,
+.toggle__bar::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.toggle__bar,
+.toggle__bar::before,
+.toggle__bar::after {
+  width: 16px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $base-black;
+  transition: transform 0.3s linear;
+}
+
+.toggle__bar::before {
+  top: 6px;
+}
+
+.toggle__bar::after {
+  bottom: 6px;
+}
+
+.toggle--activ .toggle__bar::after {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: transform 0.3s linear;
+}
+
+.toggle--activ .toggle__bar::before {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: transform 0.3s linear;
+}
+
+.toggle--activ .toggle__bar {
+  width: 27px;
+  background-color: transparent;
+  transition: transform 0.3s linear;
+}

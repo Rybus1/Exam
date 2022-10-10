@@ -1,0 +1,63 @@
+.pricebox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricebox__decoration {
+  width: 10px;
+  height: 2px;
+  background-color: $base-grey;
+  align-self: center;
+}
+
+.pricebox__input {
+  width: 125px;
+  height: 40px;
+  padding: 8px 10px;
+  background-color: $base-white;
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 96px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+  }
+}
+
+.pricebox__input::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-grey;
+}
+
+.pricebox__input:focus {
+  outline: none;
+  border-color: $primary-darker;
+}
+
+.pricebox__input:disabled {
+  border-color: $light-grey;
+  color: $light-grey;
+}
+
+.pricebox__input:disabled::placeholder {
+  color: $light-grey;
+}
+
+.pricebox__input::-webkit-outer-spin-button,
+.pricebox__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
