@@ -1,23 +1,40 @@
+.range {
+  padding-top: 32px;
+
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 28px;
+  }
+}
+
 .range__scale {
   position: relative;
   height: 2px;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
   background: $light-grey;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 34px;
+  }
 }
 
 .range__bar {
   position: absolute;
-  width: 260px;
+  width: 81vw;
   height: 4px;
   background: $primary-lighter;
 
-
   @media (min-width: $tablet) {
-    width: 203px;
+    width: 26vw;
+    left: 7px;
   }
 
   @media (min-width: $desktop) {
     width: 298px;
+    left: 0;
   }
 }
 
@@ -76,5 +93,3 @@
 .range__drag:active::before {
   background-color: $primary-lighter;
 }
-
-

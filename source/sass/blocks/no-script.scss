@@ -1,0 +1,28 @@
+.no-script .header__logo-link {
+  @media (max-width: $mobile-only) {
+    padding-left: 0;
+  }
+}
+
+.no-script .menu__list {
+  @media (max-width: $mobile-only) {
+    position: absolute;
+    display: block;
+    top: 60px;
+    overflow: visible;
+    width: 100vw;
+    right: 0;
+  }
+}
+
+.no-script .toggle {
+  display: none;
+}
+
+.no-script .promo__button {
+  display: none;
+}
+
+.no-script .map__container {
+  display: none;
+}

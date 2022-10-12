@@ -3,15 +3,19 @@
   max-width: $desktop;
   margin: 0 auto;
 
-  @media (min-width: $tablet) and (max-width: 1439px) {
-    overflow: visible;
+  @media (min-width: $tablet) {
+    min-height: 828px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 0;
   }
 }
 
 .promo__pagination {
   display: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     display: block;
     padding-bottom: 55px;
   }
@@ -44,6 +48,14 @@
   background: transparent;
   cursor: pointer;
   z-index: 1;
+
+  @media (min-width: $tablet) {
+    height: calc(100% - 188px);
+  }
+
+  @media (min-width: $desktop) {
+    height: 100%;
+  }
 }
 
 .promo__button--prew {
@@ -64,13 +76,22 @@
   }
 }
 
-.promo__button:hover,
-.promo__button:focus {
-  background: linear-gradient(90deg, $base-white 0%, $base-white 100%);
+.promo__button--prew:hover,
+.promo__button--prew:focus {
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.promo__button:active {
-  background: linear-gradient(90deg, $primary-opacity 0%, $base-white 100%);
+.promo__button--prew:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.promo__button--next:hover,
+.promo__button--next:focus {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+.promo__button--next:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
 }
 
 .promo__button:disabled {

@@ -6,10 +6,9 @@
   <title>Интернет-магазин кофейных напитков "DRINK2GO"</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32.webp">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-  integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-  crossorigin=""/>
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -18,7 +17,7 @@
 
     <div class="header__wrapper">
       <div class="header__info">
-        <a class="header__logo-link link" href="./" aria-current="page">
+        <a class="header__logo-link link" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
@@ -34,7 +33,7 @@
         <div class="navigation__menu menu menu--close no-script">
           <ul class="menu__list list">
             <li class="menu__item">
-              <a class="menu__link menu__link--activ link" href="index.html">Главная</a>
+              <a class="menu__link menu__link--active link" href="index.html">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="#">Каталог</a>
@@ -46,26 +45,26 @@
               <a class="menu__link link" href="#">О нас</a>
             </li>
           </ul>
-          <button class="menu__toggle toggle" type="button" aria-label="Открыть/скрыть меню">
+          <button class="menu__toggle toggle toggle--activ" type="button" aria-label="Открыть/скрыть меню">
             <span class="toggle__bar"></span>
           </button>
         </div>
         <ul class="navigation__account account list">
           <li class="account__item">
             <a class="account__link link" href="#">
-              <svg class="account__icon-user" width="16" height="16" role="img" aria-label="Войти." viewBox="0 0 16 16">
+              <svg class="account__icon account__icon-user" width="16" height="16" role="img" aria-label="Войти." viewBox="0 0 16 16">
                 <use xlink:href="./img/sprite.svg#user"></use>
               </svg>
-              <span class="account__sign-in" aria-hidden="true">Войти</span>
+              <span class="account__text account__sign-in" aria-hidden="true">Войти</span>
             </a>
           </li>
           <li class="account__item">
             <a class="account__link link" href="#">
-              <svg class="account__icon-basket" width="16" height="16" role="img" aria-label="Корзина товаров."
+              <svg class="account__icon account__icon-basket" width="16" height="16" role="img" aria-label="Корзина товаров."
                 viewBox="0 0 16 16">
                 <use xlink:href="./img/sprite.svg#basket"></use>
               </svg>
-              <span class="account__basket" aria-hidden="true">Корзина</span>
+              <span class="account__text account__basket" aria-hidden="true">Корзина</span>
             </a>
           </li>
         </ul>
@@ -170,12 +169,12 @@
           </li>
         </ul>
         <div class="promo__pagination swiper-pagination"></div>
-        <button class="promo__button promo__button--prew">
+        <button class="promo__button promo__button--prew" type="button">
           <svg class="promo__icon promo__icon--prew" width="11" height="20" role="img" viewBox="0 0 11 20">
             <use xlink:href="./img/sprite.svg#promo-arrow"></use>
           </svg>
         </button>
-        <button class="promo__button promo__button--next">
+        <button class="promo__button promo__button--next" type="button">
           <svg class="promo__icon promo__icon--next" width="11" height="20" role="img" viewBox="0 0 11 20">
             <use xlink:href="./img/sprite.svg#promo-arrow"></use>
           </svg>
@@ -220,7 +219,7 @@
           <div class="filters__wrapper">
             <h2 class="filters__caption visually-hidden">Фильтр каталога</h2>
             <form class="filters__form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filters__group">
+              <fieldset class="filters__group ">
                 <legend class="filters__group-name">Цена</legend>
 
                 <div class="filters__range range">
@@ -309,7 +308,10 @@
                 </label>
               </fieldset>
 
-              <button class="filters__reset" type="reset">Сбросить фильтр</button>
+              <div class="filters__buttons">
+                <button class="filters__apply" type="submit">Применить фильтр</button>
+                <button class="filters__reset" type="reset">Сбросить фильтр</button>
+              </div>
 
             </form>
           </div>
@@ -355,7 +357,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -368,17 +370,17 @@
                 <a class="card__link link" href="#">
                   <picture>
                     <source media="(min-width: 1440px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-desktop.webp 1x, img/cards/coffee-can-1-desktop@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-2-desktop.webp 1x, img/cards/coffee-can-2-desktop@2x.webp 2x">
                     <source media="(min-width: 768px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-tablet.webp 1x, img/cards/coffee-can-1-tablet@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-2-tablet.webp 1x, img/cards/coffee-can-2-tablet@2x.webp 2x">
                     <source media="(min-width: 320px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-mobile.webp 1x, img/cards/coffee-can-1-mobile@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-2-mobile.webp 1x, img/cards/coffee-can-2-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="./img/cards/coffee-can-1-desktop.jpg 1x, ./img/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      srcset="./img/cards/coffee-can-2-desktop.jpg 1x, ./img/cards/coffee-can-2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
-                      srcset="./img/cards/coffee-can-1-tablet.jpg 1x, ./img/cards/coffee-can-1-tablet@2x.jpg 2x">
-                    <img class="card__image" src="./img/cards/coffee-can-1-mobile.jpg"
-                      srcset="./img/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
+                      srcset="./img/cards/coffee-can-2-tablet.jpg 1x, ./img/cards/coffee-can-2-tablet@2x.jpg 2x">
+                    <img class="card__image" src="./img/cards/coffee-can-2-mobile.jpg"
+                      srcset="./img/cards/coffee-can-2-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
                       height="280">
                   </picture>
                 </a>
@@ -388,7 +390,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -401,17 +403,17 @@
                 <a class="card__link link" href="#">
                   <picture>
                     <source media="(min-width: 1440px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-desktop.webp 1x, img/cards/coffee-can-1-desktop@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-3-desktop.webp 1x, img/cards/coffee-can-3-desktop@2x.webp 2x">
                     <source media="(min-width: 768px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-tablet.webp 1x, img/cards/coffee-can-1-tablet@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-3-tablet.webp 1x, img/cards/coffee-can-3-tablet@2x.webp 2x">
                     <source media="(min-width: 320px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-mobile.webp 1x, img/cards/coffee-can-1-mobile@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-3-mobile.webp 1x, img/cards/coffee-can-3-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="./img/cards/coffee-can-1-desktop.jpg 1x, ./img/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      srcset="./img/cards/coffee-can-3-desktop.jpg 1x, ./img/cards/coffee-can-3-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
-                      srcset="./img/cards/coffee-can-1-tablet.jpg 1x, ./img/cards/coffee-can-1-tablet@2x.jpg 2x">
-                    <img class="card__image" src="./img/cards/coffee-can-1-mobile.jpg"
-                      srcset="./img/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
+                      srcset="./img/cards/coffee-can-3-tablet.jpg 1x, ./img/cards/coffee-can-3-tablet@2x.jpg 2x">
+                    <img class="card__image" src="./img/cards/coffee-can-3-mobile.jpg"
+                      srcset="./img/cards/coffee-can-3-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
                       height="280">
                   </picture>
                 </a>
@@ -421,7 +423,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -434,17 +436,17 @@
                 <a class="card__link link" href="#">
                   <picture>
                     <source media="(min-width: 1440px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-desktop.webp 1x, img/cards/coffee-can-1-desktop@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-4-desktop.webp 1x, img/cards/coffee-can-4-desktop@2x.webp 2x">
                     <source media="(min-width: 768px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-tablet.webp 1x, img/cards/coffee-can-1-tablet@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-4-tablet.webp 1x, img/cards/coffee-can-4-tablet@2x.webp 2x">
                     <source media="(min-width: 320px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-mobile.webp 1x, img/cards/coffee-can-1-mobile@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-4-mobile.webp 1x, img/cards/coffee-can-4-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="./img/cards/coffee-can-1-desktop.jpg 1x, ./img/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      srcset="./img/cards/coffee-can-4-desktop.jpg 1x, ./img/cards/coffee-can-4-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
-                      srcset="./img/cards/coffee-can-1-tablet.jpg 1x, ./img/cards/coffee-can-1-tablet@2x.jpg 2x">
-                    <img class="card__image" src="./img/cards/coffee-can-1-mobile.jpg"
-                      srcset="./img/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
+                      srcset="./img/cards/coffee-can-4-tablet.jpg 1x, ./img/cards/coffee-can-4-tablet@2x.jpg 2x">
+                    <img class="card__image" src="./img/cards/coffee-can-4-mobile.jpg"
+                      srcset="./img/cards/coffee-can-4-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
                       height="280">
                   </picture>
                 </a>
@@ -454,7 +456,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -467,17 +469,17 @@
                 <a class="card__link link" href="#">
                   <picture>
                     <source media="(min-width: 1440px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-desktop.webp 1x, img/cards/coffee-can-1-desktop@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-5-desktop.webp 1x, img/cards/coffee-can-5-desktop@2x.webp 2x">
                     <source media="(min-width: 768px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-tablet.webp 1x, img/cards/coffee-can-1-tablet@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-5-tablet.webp 1x, img/cards/coffee-can-5-tablet@2x.webp 2x">
                     <source media="(min-width: 320px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-mobile.webp 1x, img/cards/coffee-can-1-mobile@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-5-mobile.webp 1x, img/cards/coffee-can-5-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="./img/cards/coffee-can-1-desktop.jpg 1x, ./img/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      srcset="./img/cards/coffee-can-5-desktop.jpg 1x, ./img/cards/coffee-can-5-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
-                      srcset="./img/cards/coffee-can-1-tablet.jpg 1x, ./img/cards/coffee-can-1-tablet@2x.jpg 2x">
-                    <img class="card__image" src="./img/cards/coffee-can-1-mobile.jpg"
-                      srcset="./img/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
+                      srcset="./img/cards/coffee-can-5-tablet.jpg 1x, ./img/cards/coffee-can-5-tablet@2x.jpg 2x">
+                    <img class="card__image" src="./img/cards/coffee-can-5-mobile.jpg"
+                      srcset="./img/cards/coffee-can-5-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
                       height="280">
                   </picture>
                 </a>
@@ -487,7 +489,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -500,17 +502,17 @@
                 <a class="card__link link" href="#">
                   <picture>
                     <source media="(min-width: 1440px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-desktop.webp 1x, img/cards/coffee-can-1-desktop@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-6-desktop.webp 1x, img/cards/coffee-can-6-desktop@2x.webp 2x">
                     <source media="(min-width: 768px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-tablet.webp 1x, img/cards/coffee-can-1-tablet@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-6-tablet.webp 1x, img/cards/coffee-can-6-tablet@2x.webp 2x">
                     <source media="(min-width: 320px)" type="image/webp"
-                      srcset="./img/cards/coffee-can-1-mobile.webp 1x, img/cards/coffee-can-1-mobile@2x.webp 2x">
+                      srcset="./img/cards/coffee-can-6-mobile.webp 1x, img/cards/coffee-can-6-mobile@2x.webp 2x">
                     <source media="(min-width: 1440px)"
-                      srcset="./img/cards/coffee-can-1-desktop.jpg 1x, ./img/cards/coffee-can-1-desktop@2x.jpg 2x">
+                      srcset="./img/cards/coffee-can-6-desktop.jpg 1x, ./img/cards/coffee-can-6-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)"
-                      srcset="./img/cards/coffee-can-1-tablet.jpg 1x, ./img/cards/coffee-can-1-tablet@2x.jpg 2x">
-                    <img class="card__image" src="./img/cards/coffee-can-1-mobile.jpg"
-                      srcset="./img/cards/coffee-can-1-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
+                      srcset="./img/cards/coffee-can-6-tablet.jpg 1x, ./img/cards/coffee-can-6-tablet@2x.jpg 2x">
+                    <img class="card__image" src="./img/cards/coffee-can-6-mobile.jpg"
+                      srcset="./img/cards/coffee-can-6-mobile@2x.jpg 2x" alt="Кофе с фермерским молоком." width="280"
                       height="280">
                   </picture>
                 </a>
@@ -520,7 +522,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии <br> c натуральным фермерским молоком</p>
                 <div class="card__wrapper">
                   <span class="card__price">225₽</span>
-                  <button class="card__button">
+                  <button class="card__button" type="button">
                     <svg class="card__button-icon" width="20" height="16" role="img" viewBox="0 0 20 16">
                       <use xlink:href="./img/sprite.svg#cards-basked"></use>
                     </svg>
@@ -534,7 +536,8 @@
               <ul class="pagination__list list">
                 <li class="pagination__item">
                   <a class="pagination__link link" href="#">
-                    <svg class="pagination__icon pagination__icon--prev" width="6" height="10" role="img" viewBox="0 0 6 10">
+                    <svg class="pagination__icon pagination__icon--prev" width="6" height="10" role="img"
+                      viewBox="0 0 6 10">
                       <use xlink:href="./img/sprite.svg#pagination-arrow"></use>
                     </svg>
                     <span class="pagination__text pagination__text--prev">Назад</span>
@@ -551,7 +554,8 @@
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link link" href="#">
-                    <svg class="pagination__icon pagination__icon--next" width="6" height="10" role="img" viewBox="0 0 6 10">
+                    <svg class="pagination__icon pagination__icon--next" width="6" height="10" role="img"
+                      viewBox="0 0 6 10">
                       <use xlink:href="./img/sprite.svg#pagination-arrow"></use>
                     </svg>
                     <span class="pagination__text pagination__text--next">Вперед</span>
@@ -674,6 +678,7 @@
       </section>
 
       <section class="footer__credentials credentials">
+        <h3 class="credentials__caption visually-hidden">Разработчик</h3>
         <p class="credentials__description">Разработано в
           <a class="credentials__link link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
@@ -689,8 +694,7 @@
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-  integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-  crossorigin=""></script>
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
   <script src="./js/script.js" defer></script>
 </body>
 

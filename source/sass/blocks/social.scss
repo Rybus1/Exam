@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet) {
     grid-column: 1/4;
-    padding: 40px 0 30px;
+    padding: 40px 0 27px;
     border: none;
   }
 
@@ -80,4 +80,10 @@
 .social__link:focus .social__icon,
 .social__link:active .social__icon {
   fill: $base-primary;
+}
+
+.social__picture-link {
+  @media (min-width: $tablet) {
+    margin-top: 3px;
+  }
 }

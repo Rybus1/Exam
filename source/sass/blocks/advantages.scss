@@ -5,11 +5,11 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 248px 26px 100px;
+    padding: 60px 26px 40px;
   }
 
   @media (min-width: $desktop) {
-    padding: 100px 40px 119px;
+    padding: 100px 40px 59px;
   }
 }
 
@@ -38,12 +38,10 @@
 }
 
 .advantages__list {
-
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 50px;
+    gap: 50px 20px;
   }
 
   @media (min-width: $desktop) {
@@ -54,16 +52,28 @@
 
 .advantages__item {
   position: relative;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet) {
     padding: 0;
     padding-left: 76px;
     text-align: start;
+    justify-content: start;
+    min-height: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
     padding: 76px 0 0 0;
   }
+}
+
+.advantages__item:last-of-type {
+  margin-bottom: 60px;
 }
 
 .advantages__item::before {
@@ -85,19 +95,9 @@
   }
 }
 
-.advantages__item--speed {
-  padding-top: 66px;
-  padding-bottom: 32px;
-}
-
 .advantages__item--speed::before {
   background-image: url("../img/speed.svg");
   background-repeat: no-repeat;
-}
-
-.advantages__item--convenience {
-  padding-top: 66px;
-  padding-bottom: 32px;
 }
 
 .advantages__item--convenience::before {
@@ -105,19 +105,9 @@
   background-repeat: no-repeat;
 }
 
-.advantages__item--energy {
-  padding-top: 66px;
-  padding-bottom: 32px;
-}
-
 .advantages__item--energy::before {
   background-image: url("../img/energy.svg");
   background-repeat: no-repeat;
-}
-
-.advantages__item--ecology {
-  padding-top: 66px;
-  padding-bottom: 60px;
 }
 
 .advantages__item--ecology::before {

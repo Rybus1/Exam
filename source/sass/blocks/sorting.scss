@@ -1,3 +1,9 @@
+.sorting {
+  @media (min-width: $tablet) {
+    gap: 0 11px;
+  }
+}
+
 .sorting__caption {
   font-weight: 600;
   font-size: 16px;
@@ -5,8 +11,11 @@
 }
 
 .sorting__input {
-  width: 159px;
+  position: relative;
+  width: 165px;
   height: 32px;
+  border-radius: 4px;
+  padding-left: 10px;
   outline: none;
   border: none;
   background-color: transparent;
@@ -16,6 +25,36 @@
   font-weight: 600;
   line-height: 24px;
   color: $base-primary;
+  appearance: none;
+  background-image: url("../img/select-arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: top 10px right 10px;
+
+  @media (min-width: $tablet) {
+    padding-left: 6px;
+  }
+}
+
+.sorting__input:hover,
+.sorting__input:focus {
+  background-color: $base-secondary;
+}
+
+.sorting__input:active {
+  background-color: transparent;
+}
+
+.sorting__input:focus {
+  background-image: url("../img/select-arrow-up.png");
+}
+
+.sorting__option {
+  background-color: $base-white;
+  color: $base-black;
+}
+
+.sorting__option:hover {
+  background-color: $base-primary;
 }
 
 @media (min-width: $tablet) {

@@ -2,21 +2,23 @@ const menu = document.querySelector('.menu');
 const header = document.querySelector('.header');
 const promo = document.querySelector('.promo');
 const mapSection = document.querySelector('.map');
+const toggle = document.querySelector('.toggle');
 
 // DISABLE NO-SCRIPT MODE
+
 function disableNoScript() {
   menu.classList.remove('no-script');
   header.classList.remove('no-script');
   promo.classList.remove('no-script');
   mapSection.classList.remove('no-script');
+  toggle.classList.remove('toggle--active');
 }
 
 // MOBILE MENU TOGGLE
 
 function toggleEnabler() {
-  const toggle = document.querySelector('.toggle');
   toggle.addEventListener('click', function () {
-    toggle.classList.toggle('toggle--activ');
+    toggle.classList.toggle('toggle--active');
     menu.classList.toggle('menu--close');
   });
 }

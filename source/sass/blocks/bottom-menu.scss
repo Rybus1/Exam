@@ -3,12 +3,12 @@
   border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $tablet) {
-      padding: 0;
-      border: none;
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop) {
-      padding-top: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -35,3 +35,13 @@
   color: $base-black;
 }
 
+.bottom-menu__link:hover,
+.bottom-menu__link:focus {
+  color: $primary-lighter;
+  outline: 0;
+}
+
+.bottom-menu__link:active {
+  color: $primary-darker;
+  outline: 0;
+}

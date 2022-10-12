@@ -6,6 +6,31 @@
 
   @media (min-width: $tablet) {
     justify-content: flex-end;
+    gap: 0;
+    position: relative;
+    right: -16px;
+    top: 1px;
+  }
+}
+
+.pagination__item {
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+  }
+}
+
+.pagination__item:first-of-type,
+.pagination__item:last-of-type {
+  @media (min-width: $tablet) {
+    width: 140px;
+  }
+}
+
+.pagination__item:first-of-type,
+.pagination__item:last-of-type,
+.pagination__item:nth-last-child(2) {
+  @media (min-width: $tablet) {
+    margin-right: 0;
   }
 }
 
@@ -75,5 +100,9 @@
 .pagination__text {
   @media (max-width: $mobile-only) {
     display: none;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
   }
 }

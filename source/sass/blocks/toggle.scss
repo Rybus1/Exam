@@ -58,19 +58,19 @@
   bottom: 6px;
 }
 
-.toggle--activ .toggle__bar::after {
+.toggle--active .toggle__bar::after {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   transition: transform 0.3s linear;
 }
 
-.toggle--activ .toggle__bar::before {
+.toggle--active .toggle__bar::before {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   transition: transform 0.3s linear;
 }
 
-.toggle--activ .toggle__bar {
+.toggle--active .toggle__bar {
   width: 27px;
   background-color: transparent;
   transition: transform 0.3s linear;

@@ -1,7 +1,11 @@
 .radio {
   display: flex;
   position: relative;
-  margin-top: 20px;
+  margin-top: 22px;
+
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .radio__checker {
@@ -34,6 +38,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .radio__label--disabled {
@@ -53,6 +58,7 @@
 .radio__input:checked:disabled + .radio__checker {
   border-color: $light-grey;
 }
+
 .radio__input:checked:disabled + .radio__checker::before {
   background-color: $light-grey;
 }
@@ -72,4 +78,3 @@
 .radio__input:disabled + .radio__checker::before {
   background-color: $base-white;
 }
-

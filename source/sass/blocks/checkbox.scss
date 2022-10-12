@@ -35,6 +35,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .checkbox__label--disabled {
@@ -60,7 +61,7 @@
   background-color: $lightest-grey;
 }
 
-.checkbox__input:checked:disabled+.checkbox__checker::before {
+.checkbox__input:checked:disabled + .checkbox__checker::before {
   background-color: $base-grey;
 }
 

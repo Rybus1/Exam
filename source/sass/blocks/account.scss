@@ -3,9 +3,23 @@
   flex-wrap: wrap;
   min-width: 120px;
 
+  @media (min-width: $tablet) {
+    justify-content: end;
+  }
+
   @media (min-width: $desktop) {
     min-width: 261px;
-    column-gap: 27px;
+    gap: 0 15px;
+  }
+}
+
+.account__item {
+  @media (min-width: $tablet) {
+    width: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
   }
 }
 
@@ -14,7 +28,7 @@
   padding: 22px;
 
   @media (min-width: $tablet) {
-    padding: 32px 18px;
+    padding: 32px 22px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 500;
@@ -30,12 +44,14 @@
   border: none;
 
   @media (min-width: $desktop) {
+    fill: $base-primary;
     color: $base-primary;
   }
 }
 
 .account__link:hover {
   @media (min-width: $desktop) {
+    fill: $base-primary;
     color: $base-primary;
   }
 }
@@ -76,7 +92,7 @@
 .account__icon-user {
   fill: $base-black;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-right: 8px;
   }
 }
@@ -84,7 +100,7 @@
 .account__icon-basket {
   fill: $base-black;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-right: 8px;
   }
 }

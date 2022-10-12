@@ -3,13 +3,13 @@
   border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $tablet) {
-      margin-left: 20px;
-      padding: 0;
-      border: none;
+    margin-left: 20px;
+    padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop) {
-      padding-top: 10px;
+    padding-top: 10px;
   }
 }
 
@@ -27,12 +27,24 @@
 }
 
 .contacts__data {
+  display: block;
   position: relative;
   padding-left: 19px;
   padding-right: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.contacts__data:hover,
+.contacts__data:focus {
+  color: $primary-lighter;
+  outline: 0;
+}
+
+.contacts__data:active {
+  color: $primary-darker;
+  outline: 0;
 }
 
 .contacts__data::before {
@@ -48,10 +60,8 @@
 
 .contacts__data--adress::before {
   background-image: url("../img/address.svg");
-
 }
 
 .contacts__data--phone::before {
   background-image: url("../img/phone.svg");
 }
-
